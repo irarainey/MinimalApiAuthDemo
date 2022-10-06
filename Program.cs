@@ -24,7 +24,7 @@ app.UseAuthorization();
 // Base home endpoint that is unsecured
 app.MapGet("/", (HttpContext httpContext) =>
 {
-    return $"Hello world";
+    return "Hello world";
 });
 
 // Hello endpoint which implements the HelloCaller authorisation policy
